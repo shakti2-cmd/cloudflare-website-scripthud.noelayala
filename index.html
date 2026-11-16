@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScriptHud — The Floating Teleprompter &amp; Live Script HUD App</title>
+  <meta name="description" content="Stay on script while keeping perfect eye contact with your camera lens. ScriptHud floats invisibly over Zoom, Meet, OBS, and Loom with voice-paced scrolling." />
+  <link rel="canonical" href="https://scripthud.noeljedayala.workers.dev/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ScriptHud — Stay on Script. Never Lose Your Place Live." />
+  <meta property="og:description" content="Floating transparent script HUD & voice-paced teleprompter built for creators, sales callers, streamers, and educators." />
+  <meta property="og:url" content="https://scripthud.noeljedayala.workers.dev/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="assets/scripthud-logo.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ScriptHud",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "macOS, Windows",
+    "offers": {
+      "@type": "Offer",
+      "price": "12.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- TOP LAUNCH / PARENT PROMO STRIP -->
+  <div class="promo-bar">
+    <div class="promo-inner">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <span class="promo-badge">EARLY ACCESS LAUNCH [PLACEHOLDER]</span>
+        <span>Save <strong>25%</strong> on annual ScriptHud Pro &amp; Team licenses · A <a href="https://zeltko.noeljedayala.workers.dev/" style="color:var(--primary);text-decoration:underline;">Zeltko Software Group</a> Product</span>
+      </div>
+      <span class="placeholder-pill">App Placeholder Content — Swap Copy &amp; Checkout Links Anytime</span>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="assets/scripthud-logo.png" alt="ScriptHud App Logo" class="brand-logo" width="40" height="40" loading="eager" />
+        <span>
+          <span class="brand-name">ScriptHud</span>
+          <span class="brand-tag">v1.0 DESKTOP HUD [PLACEHOLDER]</span>
+        </span>
+      </a>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary Navigation">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#preview" class="nav-link">Live UI</a>
+        <a href="#use-cases" class="nav-link">Use Cases</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" id="theme-toggle" class="btn btn-secondary btn-sm">
+          <span class="theme-label">Light Mode</span>
+        </button>
+        <a href="#pricing" class="btn btn-primary btn-sm">Get ScriptHud →</a>
+        <button type="button" id="mobile-menu-btn" class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO SALES SECTION -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-centered">
+          <span class="eyebrow">DESKTOP OVERLAY HUD · MACOS &amp; WINDOWS [PLACEHOLDER]</span>
+          <h1 class="hero-title">Stay on Script. Look at the Lens. Never Blank Out Live.</h1>
+          <p class="hero-lead">
+            <strong>ScriptHud</strong> is a razor-thin translucent floating HUD that hugs your webcam lens, paces smoothly as you speak, and stays invisible when you share your screen on Zoom, Meet, Teams, or OBS. <span class="placeholder-pill">Replace w/ App Elevator Pitch</span>
+          </p>
+          <div class="hero-cta-row">
+            <a href="#pricing" class="btn btn-primary">Start 14-Day Free Trial — $12/mo</a>
+            <a href="#preview" class="btn btn-secondary">Inspect App Showcase ↓</a>
+          </div>
+          <div class="trust-bullets">
+            <span><strong>✓</strong> 14-day free trial <span class="placeholder-pill">Placeholder</span></span>
+            <span><strong>✓</strong> Screen-share invisible mode</span>
+            <span><strong>✓</strong> Works 100% offline locally</span>
+            <span><strong>✓</strong> Cancel subscription in 1 click</span>
+          </div>
+        </div>
+
+        <!-- HERO CANVA HUD PRODUCT FRAME + INTERACTIVE SIMULATOR -->
+        <div class="hero-product-frame">
+          <div class="hero-frame-bar">
+            <div class="frame-dots" aria-hidden="true">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+              <span style="margin-left:8px;color:var(--text-muted);">ScriptHud.app — Active Overlay [Canva App Mockup]</span>
+            </div>
+            <span class="placeholder-pill">App Hero Screenshot [Made in Canva]</span>
+          </div>
+
+          <button type="button" class="hud-preview-media"
+            data-lightbox-src="assets/scripthud-hero-hud.jpg"
+            data-lightbox-title="ScriptHud Hero Interface — Translucent Live Prompter HUD"
+            data-lightbox-desc="Generated in Canva as the primary ScriptHud desktop overlay preview: shows active lens-aligned cue block, WPM telemetry badge, waveform activity, and global hotkeys.">
+            <img src="assets/scripthud-hero-hud.jpg"
+                 alt="ScriptHud floating translucent dark glass overlay app showing live teleprompter cue text, 145 WPM badge, and audio waveform over a studio desk"
+                 width="1400" height="788"
+                 loading="eager" fetchpriority="high" />
+            <span class="zoom-pill">🔍 Click to Inspect Full App Mockup</span>
+          </button>
+
+          <!-- Interactive Sales Simulator Strip -->
+          <div class="hud-sim-bar">
+            <div id="sim-cue-text" class="sim-cue-box" aria-live="polite">
+              [Cue · 145 WPM Natural]: “Notice how the floating HUD keeps you centered on the camera lens without looking away.”
+            </div>
+            <div class="sim-controls" role="group" aria-label="Test ScriptHud pacing presets">
+              <button type="button" class="sim-btn" data-sim-wpm="120">120 WPM</button>
+              <button type="button" class="sim-btn is-active" data-sim-wpm="145">145 WPM</button>
+              <button type="button" class="sim-btn" data-sim-wpm="voice">Voice-Sync AI</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER COMPARISON -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header is-centered">
+          <span class="eyebrow">WHY CREATORS &amp; SALES TEAMS SWITCH</span>
+          <h2 class="section-title">Built for Eye Contact, Pacing &amp; Zero Screen-Share Leaks</h2>
+          <p class="section-desc">Stop hiding sticky notes around your monitor or reading off a second screen like a robot. <span class="placeholder-pill">Editable Problem/Solution Copy</span></p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card compare-card is-bad">
+            <span class="eyebrow" style="color:var(--error);border-color:rgba(248,81,73,0.35);background:rgba(248,81,73,0.1);">BEFORE SCRIPTHUD</span>
+            <h3 class="card-title">Clumsy Tabs, Drifting Gaze &amp; Robotic Reads</h3>
+            <ul class="compare-list">
+              <li>Eyes dart noticeably sideways to read Notion or Google Docs scripts during sales calls.</li>
+              <li>Browser teleprompter windows appear right inside Zoom, Teams, or OBS recordings.</li>
+              <li>Fixed constant-speed scrollers force you to rush—or lose your place when clients interrupt.</li>
+              <li>Cluttered desktop windows cover code editors or slide decks while presenting live.</li>
+            </ul>
+          </article>
+
+          <article class="card compare-card is-good">
+            <span class="eyebrow" style="color:var(--success);border-color:rgba(63,185,80,0.35);background:rgba(63,185,80,0.1);">WITH SCRIPTHUD PRO</span>
+            <h3 class="card-title">Natural Confidence Directly Under Your Lens</h3>
+            <ul class="compare-list">
+              <li>Pin a slim translucent glass HUD immediately below your webcam—maintain 100% eye contact.</li>
+              <li><strong>Screen-Share Stealth Flag:</strong> Excluded from window &amp; display captures <span class="placeholder-pill">Feature Placeholder</span>.</li>
+              <li>Voice-paced scroll follows your cadence automatically and pauses cleanly when you do.</li>
+              <li>Global hotkeys (`Cmd/Ctrl + \`) hide, pause, or jump cue sections instantaneously.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT VISUAL SHOWCASE (ALL CANVA EXPORTS) -->
+    <section id="preview" class="section section-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">INSIDE SCRIPTHUD // CANVA PRODUCT PREVIEWS</span>
+          <h2 class="section-title">Minimal Footprint. Built for High-Stakes Calls &amp; Studio Shoots.</h2>
+          <p class="section-desc">Every image below is a ScriptHud interface placeholder created in Canva—ready for screenshots of your actual builds when shipped.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Card 1 -->
+          <article class="card">
+            <button type="button" class="card-media"
+              data-lightbox-src="assets/scripthud-hero-hud.jpg"
+              data-lightbox-title="[Module 01] — Adaptive Translucent Teleprompter"
+              data-lightbox-desc="Floating dark glass overlay anchored to top-center monitor bezel with real-time WPM pacing.">
+              <img src="assets/scripthud-hero-hud.jpg" alt="ScriptHud translucent live teleprompter HUD preview" width="1400" height="788" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect UI</span>
+            </button>
+            <div class="card-body">
+              <span class="placeholder-pill" style="margin-bottom:10px;align-self:flex-start;">Feature Module 01</span>
+              <h3 class="card-title">Floating Glass Overlay</h3>
+              <p class="card-text">Customize blur opacity, cue font size, line height, and active highlight bar so your script blends smoothly over any app window.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <button type="button" class="card-media"
+              data-lightbox-src="assets/scripthud-workspace-demo.jpg"
+              data-lightbox-title="[Module 02] — Streamer &amp; Studio Waveform HUD"
+              data-lightbox-desc="Monitor view showing ScriptHud dock mode integrated cleanly with microphone audio monitoring and build telemetry.">
+              <img src="assets/scripthud-workspace-demo.jpg" alt="Desktop creator studio workstation displaying ScriptHud waveform telemetry" width="1400" height="788" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect Studio View</span>
+            </button>
+            <div class="card-body">
+              <span class="placeholder-pill" style="margin-bottom:10px;align-self:flex-start;">Feature Module 02</span>
+              <h3 class="card-title">Voice-Triggered Auto-Pace</h3>
+              <p class="card-text">Detects natural speech tempo and micro-pauses locally from your microphone waveform—no awkward manual scrolling mid-sentence.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <button type="button" class="card-media"
+              data-lightbox-src="assets/scripthud-mobile-companion.jpg"
+              data-lightbox-title="[Module 03] — Synced Playbooks &amp; Companion Control"
+              data-lightbox-desc="Edit scripts and code talk tracks on laptop while controlling cues and pace remotely from your phone.">
+              <img src="assets/scripthud-mobile-companion.jpg" alt="Laptop and phone displaying synchronized ScriptHud scripts and progress bars" width="1400" height="788" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect Sync View</span>
+            </button>
+            <div class="card-body">
+              <span class="placeholder-pill" style="margin-bottom:10px;align-self:flex-start;">Feature Module 03</span>
+              <h3 class="card-title">Cloud Sync &amp; Cue Cards</h3>
+              <p class="card-text">Write scripts on your laptop, organize objection-handling cards by hotkey, and trigger cues seamlessly from your desk or companion device.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section id="use-cases" class="section">
+      <div class="container">
+        <div class="section-header is-centered">
+          <span class="eyebrow">BUILT FOR HIGH-OUTPUT COMMUNICATORS</span>
+          <h2 class="section-title">One HUD. Four Revenue-Generating Workflows.</h2>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <div class="card-body">
+              <span class="eyebrow" style="margin-bottom:10px;">01 // YOUTUBE &amp; LOOM CREATORS</span>
+              <h3 class="card-title">Finish A-Roll in Half the Takes</h3>
+              <p class="card-text">Batch-record tutorials, product walkthroughs, and talking-head YouTube videos in single clean takes without memorizing paragraphs. <span class="placeholder-pill">Placeholder Copy</span></p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="eyebrow" style="margin-bottom:10px;">02 // B2B SALES &amp; DEMO TEAMS</span>
+              <h3 class="card-title">Never Miss a Discovery Question or Metric</h3>
+              <p class="card-text">Keep pricing anchors, objection counters, and customer proof points pinned silently above Zoom while demoing live dashboards.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="eyebrow" style="margin-bottom:10px;">03 // FOUNDERS &amp; WEBINAR HOSTS</span>
+              <h3 class="card-title">Command Keynotes &amp; Investor Pitches</h3>
+              <p class="card-text">Deliver crisp keynote stories and exact financial numbers straight into the camera without switching slides back and forth.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="eyebrow" style="margin-bottom:10px;">04 // EDUCATORS &amp; DEVELOPERS</span>
+              <h3 class="card-title">Teach Complex Code Without Broken Flow</h3>
+              <p class="card-text">Keep terminal commands and architectural bullet cues hovering cleanly near the top bezel over VS Code or documentation.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIPTION PRICING SECTION -->
+    <section id="pricing" class="section section-surface">
+      <div class="container">
+        <div class="section-header is-centered">
+          <span class="eyebrow">TRANSPARENT SUBSCRIPTION PRICING</span>
+          <h2 class="section-title">Simple Plans That Pay Back in One Saved Take.</h2>
+          <p class="section-desc">All pricing, trials, and Stripe/LemonSqueezy checkout triggers are pre-wired as editable placeholders ready for launch. <span class="placeholder-pill">Subscription Placeholders</span></p>
+        </div>
+
+        <div class="billing-wrap-center">
+          <div class="billing-switch-wrap" role="group" aria-label="Billing interval toggle">
+            <button type="button" class="billing-btn" data-billing-mode="monthly" aria-pressed="false">Monthly Billing</button>
+            <button type="button" class="billing-btn is-active" data-billing-mode="annual" aria-pressed="true">
+              Annual Billing <span class="save-tag">SAVE 25%</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <!-- Starter Plan -->
+          <article class="pricing-card">
+            <span class="eyebrow" style="margin-bottom:8px;align-self:flex-start;">STARTER</span>
+            <h3 class="card-title">Solo Sandbox</h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Try the core floating HUD window locally before upgrading. <span class="placeholder-pill">Placeholder</span></p>
+            <div class="price-row">
+              <span class="price-num" data-price-annual="0" data-price-monthly="0">$0</span>
+              <span class="price-period">/ forever</span>
+            </div>
+            <div class="billing-note" data-billing-note data-note-annual="No credit card required · Local desktop" data-note-monthly="No credit card required · Local desktop">No credit card required · Local desktop</div>
+            <ul class="feature-list">
+              <li>Floating transparent desktop HUD</li>
+              <li>Up to 3 local saved scripts</li>
+              <li>Manual speed slider &amp; Spacebar pause</li>
+              <li>macOS &amp; Windows installer <span class="placeholder-pill">TBD</span></li>
+            </ul>
+            <button type="button" class="btn btn-secondary btn-full" data-subscribe-plan="Starter Free" data-annual="0" data-monthly="0">
+              Get Starter Free
+            </button>
+          </article>
+
+          <!-- Pro Plan (Highlighted Most Popular) -->
+          <article class="pricing-card is-popular">
+            <span class="popular-ribbon">MOST POPULAR</span>
+            <span class="eyebrow" style="margin-bottom:8px;align-self:flex-start;">PRO CREATOR &amp; SALES</span>
+            <h3 class="card-title">ScriptHud Pro</h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Everything needed for daily camera delivery, calls &amp; stealth mode.</p>
+            <div class="price-row">
+              <span class="price-num" data-price-annual="12" data-price-monthly="16">$12</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <div class="billing-note" data-billing-note data-note-annual="Billed $144/year · 14-day free trial" data-note-monthly="Billed $16 monthly · Cancel anytime">Billed $144/year · 14-day free trial</div>
+            <ul class="feature-list">
+              <li>Unlimited scripts, cues &amp; folders</li>
+              <li><strong>Voice-Paced AI Scroll</strong> (local low-latency)</li>
+              <li><strong>Screen-Share Stealth Flag</strong> (Zoom/OBS/Meet)</li>
+              <li>Instant Boss-Key &amp; section jump hotkeys</li>
+              <li>Cloud script sync across 2 machines</li>
+            </ul>
+            <button type="button" class="btn btn-primary btn-full" data-subscribe-plan="ScriptHud Pro" data-annual="12" data-monthly="16">
+              Start 14-Day Pro Trial →
+            </button>
+          </article>
+
+          <!-- Team Plan -->
+          <article class="pricing-card">
+            <span class="eyebrow" style="margin-bottom:8px;align-self:flex-start;">TEAMS &amp; AGENCIES</span>
+            <h3 class="card-title">Team Playbooks</h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">For sales pods, founder cohorts, and creator studios shipping together.</p>
+            <div class="price-row">
+              <span class="price-num" data-price-annual="29" data-price-monthly="39">$29</span>
+              <span class="price-period">/ seat / mo</span>
+            </div>
+            <div class="billing-note" data-billing-note data-note-annual="Billed $348/seat annually · Priority SLA" data-note-monthly="Billed $39/seat monthly · Flex seats">Billed $348/seat annually · Priority SLA</div>
+            <ul class="feature-list">
+              <li>Everything in ScriptHud Pro included</li>
+              <li>Shared team talk-track &amp; playbook library</li>
+              <li>Centralized license &amp; seat management</li>
+              <li>Custom onboarding &amp; hotkeys profile export</li>
+              <li>Priority engineering channel <span class="placeholder-pill">Placeholder</span></li>
+            </ul>
+            <button type="button" class="btn btn-secondary btn-full" data-subscribe-plan="Team Playbooks" data-annual="29" data-monthly="39">
+              Subscribe Team Plan
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL PLACEHOLDERS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header is-centered">
+          <span class="eyebrow">EARLY ACCESS FEEDBACK [SAMPLE PLACEHOLDERS]</span>
+          <h2 class="section-title">Built for People Who Speak on Camera for a Living</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-body">
+              <div style="color:#F59E0B;margin-bottom:10px;">★★★★★</div>
+              <p class="card-text" style="color:var(--text);font-style:italic;">
+                “[Sample Testimonial Placeholder] My Loom product demos went from 6 retakes down to 1 single take. Nobody on the call could tell I was reading bullet cues.”
+              </p>
+              <strong style="font-size:0.9rem;">[Jordan T. — Product Marketing Lead Placeholder]</strong>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <div style="color:#F59E0B;margin-bottom:10px;">★★★★★</div>
+              <p class="card-text" style="color:var(--text);font-style:italic;">
+                “[Sample Testimonial Placeholder] Keeping objection responses and pricing tiers right below my webcam during enterprise Zoom demos changed how smoothly our team closes.”
+              </p>
+              <strong style="font-size:0.9rem;">[Hannah R. — SaaS Account Executive Placeholder]</strong>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <div style="color:#F59E0B;margin-bottom:10px;">★★★★★</div>
+              <p class="card-text" style="color:var(--text);font-style:italic;">
+                “[Sample Testimonial Placeholder] Lightweight, fast, and doesn’t show up when I screen-share VS Code in tutorials. Instantly worth the annual Pro plan.”
+              </p>
+              <strong style="font-size:0.9rem;">[Marcus D. — Developer Educator Placeholder]</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section id="faq" class="section section-surface">
+      <div class="container">
+        <div class="section-header is-centered">
+          <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title">Everything You Need to Know Before Subscribing</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-btn" id="faq-btn-1" aria-expanded="true" aria-controls="faq-panel-1">
+              <span>Does ScriptHud appear when I share my entire screen on Zoom, Meet, or OBS?</span>
+              <span class="faq-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+              [App Spec Placeholder] ScriptHud Pro leverages native OS window-capture exclusion APIs so the overlay stays completely invisible to participants and screen recordings while remaining crystal-clear to you.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-btn" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">
+              <span>Does Voice-Paced Auto-Scroll send my audio or scripts to third-party servers?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              [Privacy Spec Placeholder] Speech pacing runs locally on your machine for instant zero-lag responsiveness—your voice audio stays on-device unless you explicitly enable cloud sync for script documents.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-btn" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">
+              <span>Can I switch between Monthly and Annual billing or cancel anytime?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              Yes—subscriptions include a self-serve customer portal ([Stripe / LemonSqueezy Customer Portal Placeholder]) where you can upgrade seats, switch billing intervals, or cancel immediately with zero lock-in.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-btn" id="faq-btn-4" aria-expanded="false" aria-controls="faq-panel-4">
+              <span>Which platforms does ScriptHud support at launch?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              [Build Target Placeholder] Native installers for macOS (Apple Silicon &amp; Intel) and Windows 10/11 are targeted under the Pro and Starter subscriptions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CONVERSION CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="eyebrow">READY TO RECORD &amp; PRESENT WITH ZERO FRICTION?</span>
+          <h2 class="section-title" style="max-width:720px;margin:0 auto 14px;">Put Your Best Delivery Directly Under the Lens Today.</h2>
+          <p class="section-desc" style="margin:0 auto 28px;">Start your 14-day ScriptHud Pro trial or grab the Starter Sandbox to test the floating HUD on your next call.</p>
+          <div class="hero-cta-row" style="margin-bottom:0;">
+            <button type="button" class="btn btn-primary" data-subscribe-plan="ScriptHud Pro" data-annual="12" data-monthly="16">
+              Subscribe to ScriptHud Pro ($12/mo) →
+            </button>
+            <a href="#pricing" class="btn btn-secondary">Compare All Plans</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="assets/scripthud-logo.png" alt="ScriptHud Brand Mark" width="32" height="32" style="width:32px;height:32px;border-radius:6px;border:1px solid var(--border);" loading="lazy" />
+        <div>
+          <strong style="color:var(--text-heading);">ScriptHud</strong> · A <a href="https://zeltko.noeljedayala.workers.dev/" style="color:var(--primary);">Zeltko Software Group</a> Application <span class="placeholder-pill">[© 2026 Placeholder]</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/shakti2-cmd/cloudflare-website-scripthud.noelayala" target="_blank" rel="noopener">Repository ↗</a>
+        <a href="mailto:noeljedayala@gmail.com">Contact Desk</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUBSCRIPTION CHECKOUT / EARLY ACCESS MODAL (SCAFFOLD E) -->
+  <div id="subscription-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="sub-modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <h3 id="sub-modal-title" class="card-title" style="margin-bottom:0;font-size:1.1rem;">Complete Your ScriptHud Subscription</h3>
+        </div>
+        <button type="button" id="sub-modal-close" class="modal-close" aria-label="Close checkout dialog">✕ Close</button>
+      </div>
+      <div class="modal-body">
+        <div class="checkout-summary">
+          <div>
+            <span style="display:block;font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono);">SELECTED PLAN</span>
+            <strong id="sub-plan-name" style="color:var(--text-heading);">ScriptHud Pro (Annual Plan)</strong>
+          </div>
+          <strong id="sub-plan-price" style="font-size:1.25rem;color:var(--primary);">$12 / mo</strong>
+        </div>
+
+        <p style="font-size:0.86rem;color:var(--text-muted);margin-bottom:16px;">
+          <span class="placeholder-pill">Stripe / LemonSqueezy Integration Placeholder</span> Connect your checkout URL here for instant card billing, or reserve an Early Access license below:
+        </p>
+
+        <form id="sub-checkout-form" action="https://formsubmit.co/ajax/noeljedayala@gmail.com" method="POST" class="form-stack">
+          <input type="hidden" name="_subject" value="ScriptHud App — New Subscription / License Signup" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" id="sub-hidden-plan" name="selected_plan" value="ScriptHud Pro" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="form-group">
+            <label for="sub-email">Work or Creator Email *</label>
+            <input type="email" id="sub-email" name="email" required placeholder="you@domain.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="sub-os">Primary Operating System</label>
+            <select id="sub-os" name="operating_system">
+              <option value="macOS (Apple Silicon / Intel)">macOS (Apple Silicon / Intel)</option>
+              <option value="Windows 11 / 10">Windows 11 / 10</option>
+              <option value="Both macOS &amp; Windows">Both macOS &amp; Windows</option>
+            </select>
+          </div>
+
+          <button type="submit" id="sub-submit-btn" class="btn btn-primary btn-full">Continue to Checkout / Reserve Access</button>
+          <div id="sub-form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE PREVIEW LIGHTBOX MODAL -->
+  <div id="image-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="img-modal-title">
+    <div class="modal-box is-wide">
+      <div class="modal-header">
+        <h3 id="img-modal-title" class="card-title" style="margin-bottom:0;font-size:1.05rem;">App Visual Preview</h3>
+        <button type="button" id="img-modal-close" class="modal-close" aria-label="Close preview">✕ Close</button>
+      </div>
+      <div class="modal-body" style="padding:16px;background:#010409;display:flex;justify-content:center;">
+        <img id="img-modal-pic" src="" alt="ScriptHud full preview" style="max-height:76vh;width:auto;border-radius:6px;" />
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
